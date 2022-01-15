@@ -15,6 +15,8 @@ finish = False
 clock = time.Clock()
 FPS = 60
 
+
+
 class GameSprite(sprite.Sprite):
    def __init__(self, player_image, player_x, player_y, player_speed, wight, height):
        super().__init__()
@@ -49,11 +51,13 @@ ball = GameSprite('ping pong ball.png', 200, 200, 4, 50, 50)
 
 font.init()
 font = font.Font(None, 35)
-lose1 = font.render('PLAYER 1 LOSE!', True, (180, 0, 0))
-lose2 = font.render('PLAYER 2 LOSE!', True, (180, 0, 0))
+lose1 = font.render('Игрок 1 проиграл!', True, (180, 0, 0))
+lose2 = font.render('Игрок 2 проиграл!', True, (180, 0, 0))
 
-speed_x = 6
-speed_y = 6
+speed_x = 7
+speed_y = 7
+
+
 
 
 racket1.reset()
